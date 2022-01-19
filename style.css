@@ -1,114 +1,124 @@
 body {
-  background-color: white;
-  margin: 0;
+    background-color: white;
+    margin: 0;
 }
 
 .container {
-  padding-left: 100px;
-  padding-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  width: 100%;
-  height: 100px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 70px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 h1 {
-  color: rgb(0, 0, 0);
-  transition: 1s;
-  margin: 0%;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    margin: 0%;
 }
 
 h1:hover {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 ul {
-  list-style: none;
-  display: flex;
+    list-style: none;
+    display: flex;
 }
 
 ul li {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 ul li a {
-  text-decoration: none;
-  color: #515151;
+    text-decoration: none;
+    color: #515151;
 }
 
 .btn {
-  --color: #fa2525;
-  --color2: #e5e5e5;
-  padding: 0.3rem 1.5rem;
-  background-color: transparent;
-  border-radius: 15px;
-  border: none solid var(--color);
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-  font-weight: 200;
-  font-size: 10px;
-  font-family: "Roboto", "Segoe UI", sans-serif;
-  text-transform: uppercase;
-  color: var(--color);
+    --color: #fa2525;
+    --color2: #e5e5e5;
+    padding: 0.3rem 1.5rem;
+    background-color: transparent;
+    border-radius: 15px;
+    border: none solid var(--color);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 200;
+    font-size: 10px;
+    font-family: "Roboto", "Segoe UI", sans-serif;
+    text-transform: uppercase;
+    color: var(--color);
 }
 
 .btn::before {
-  content: "";
-  display: block;
-  height: 110%;
-  width: 310%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  position: absolute;
-  top: 50%;
-  left: -5%;
-  z-index: -1;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  background: linear-gradient(45deg, var(--color2) 33%, var(--color) 66%);
+    content: "";
+    display: block;
+    height: 110%;
+    width: 310%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    z-index: -1;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    background: linear-gradient(45deg, var(--color2) 33%, var(--color) 66%);
 }
 
 .btn:hover::before {
-  left: -200%;
+    left: -200%;
 }
 
 .btn:hover {
-  color: var(--color2);
+    color: var(--color2);
 }
 
 .btn:active {
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
-  -webkit-filter: brightness(0.8);
-  filter: brightness(0.8);
+    -webkit-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
 }
 
 section {
-  background-color: #f4f4f4;
-  width: 100%;
-  height: 100vh;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 25vh;
 }
 
 section h3 {
-  margin: 0%;
+    margin: 0%;
 }
 .offer-block {
-  color: #7e7e7e;
+    color: #7e7e7e;
 }
 
+.title {
+    text-align: center;
+    padding: 55px 0;
+    font-weight: bold;
+    background: brown;
+    color: white;
+}
 footer {
-  background-color: black;
-  width: 100%;
-  height: 100px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
 }
